@@ -1,51 +1,21 @@
-# smile
+# smliedemo
 
 > A Vue.js project
 
-## 前端环境的搭建
-    *建立前端文件夹
-    `mkdir vuedemo`
+## Build Setup
 
-    *使用vue-cli生成项目目录
-    * 检测npm版本，在终端输入`npm -v`
-    * 全局安装vue-cli,在终端输入`npm install vue-cli -g`
-    * 初始化文件，在终端输入`vue init webpack`
+``` bash
+# install dependencies
+npm install
 
-    *检测环境是否安装成功
-    * 使用`npm run dev`将测试环境打开
-    * 使用`ctrl`+鼠标左键，单击终端给出的路径
+# serve with hot reload at localhost:8080
+npm run dev
 
-## 引入Vant组件库
-    *安装Vant
-    `npm i vant -S`
+# build for production with minification
+npm run build
 
-    *引入Vant
-    `npm i babel-plugin-import -D`
-    在.babelrc中配置plugins(插件)
-    '{
-        "plugins": [
-            ["import", {
-            "libraryName": "vant",
-            "libraryDirectory": "es",
-            "style": true
-            }]
-        ]
-    }'
+# build for production and view the bundle analyzer report
+npm run build --report
+```
 
-    *按需使用Vant组件
-    配置好.babelrc后，就可以按需引用Vant框架了。
-    `import Button from 'vant/lib/button';
-    import 'vant/lib/vant-css/base.css';
-    import 'vant/lib/vant-css/button.css';`
-
-    *导入所有的组件
-    `import Vue from 'vue';
-    import Vant from 'vant';
-    import 'vant/lib/vant-css/index.css';
-
-    Vue.use(Vant);`
-    
-    *可以参考Vant官方文档
-    ![Vant官方文档]{https://www.youzanyun.com/zanui/vant#/zh-CN/intro}
-
-
+For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
