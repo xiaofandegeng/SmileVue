@@ -80,6 +80,7 @@
   import floorComponnent from '../component/floorComponnent.vue'
   import {toMoney} from '@/filter/moneyFilter.js'
   import goodsInfo from '../component/goodsInfoComponent.vue'
+  import url from '@/serviceAPI.config.js'
   export default {
     data() {
       return {
@@ -114,7 +115,7 @@
     },
     created(){
       axios({
-        url:'https://www.easy-mock.com/mock/5ae2eeb23fbbf24d8cd7f0b6/SmileVue/index',
+        url: url.getShoppingMallInfo,
         methods:'get'
       })
       .then(response => {
